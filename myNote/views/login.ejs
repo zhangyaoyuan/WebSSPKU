@@ -1,0 +1,20 @@
+<%- include header %>
+<div class="text-center page-title">用户登录</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4">
+			<form method="post">
+				<div class="form-group">
+					<input type="text" class="form-control" name="username"  <% if(err3==''){ %> placeholder="用户名" <%} else{ %> placeholder="<%= err3 %>"<%}%>>
+				</div>
+				<div class="form-group">
+					<input type="password" class="form-control" name="password"  <% if(err4==''){ %> placeholder="密码" <%} else{ %> placeholder="<%= err4 %>"<%}%>>
+				</div>
+
+				<button type="submit" class="btn btn-default center-block">登录</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<%- include footer %>
